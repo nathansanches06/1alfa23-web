@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-</style>
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{
   background-color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
 }
 section{
     width: 1200px;
@@ -44,29 +43,19 @@ a{
 .item {
     display: inline-block;
     width: 30%;
-    font-size: 20px;
-    text-align: center;
-}
-
-.item img {
-    width: 100%;
-}
-
-.item .title {
-    font-size: 23%px;
-    font-weight: bold;
-}
-
-.item {
-    display: inline-block;
-    width: 30%;
     padding: 1.5%;
     font-size: 20px;
-    text-align: center;
+/*    text-align: center;*/
     line-height: 25px;
     color: #474747;
 }
-
+.item img {
+    width: 100%;
+}
+.item .title {
+    font-size: 23px;
+    font-weight: bold;
+}
 .financiamento {
     background: #ffda1f;
     text-align: center;
@@ -75,43 +64,133 @@ a{
     padding: 50px;
     line-height: 40px;
 }
-
-.botao  a {
+.botao a {
     background: #000;
     color: #fff;
     padding: 10px 30px;
 }
-
 .botao {
     margin-top: 30px;
 }
-
-.produtos{
+.produtos, .depoimentos{
     text-align: center;
     margin: 50px 0;
 }
-
-.produtos .titulo{
-    font-size:  45px;
-    font-weight: bold;
+ .titulo{
+    font-size:45px;
+    font-weight:bold;    
 }
-
-.produto .subtitulo{
-    font-size: 30px ;
-    font-weight: bold ;
-    color: #474747 ;
-    margin-bottom: 30px ;
+ .subtitulo{
+    font-size:30px;
+    font-weight:bold; 
+    color:#474747;
+    margin-top: 15px;
 }
-
 .sublinhado{
     width: 150px;
-    background-color: #ffda1f;
+   background: #ffda1f;
     height: 10px;
     margin: 0 auto;
-    margin-top:  10px;
-    margin-bottom: 30px ;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 a:hover{
     transition: 0.3s;
     opacity: 0.8;
 }
+footer{
+    background-color: #474747; 
+}
+footer .item{
+    color:#fff;
+}
+
+.depoimentos .item{
+    border: 1px solid #474747;
+    width: calc(30% - 2px); 
+}
+.depoimentos img{
+    width: 100px;
+    border-radius: 50px;
+}
+.depoimentos .cliente {
+    margin-bottom: -100px;
+    padding-top: 10px;
+}
+.depoimentos .cliente .nome{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.contato input, .contato textarea{
+    border-bottom: 2px solid #fff;
+    height: 35px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    max-width: 250px;
+}
+.contato textarea {
+    height: 50px;
+    max-width: 250px;
+}
+.contato button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    font-size: 15px;
+    display: block;
+    border-radius: 25px;
+}
+.item.contato {
+    line-height: 30px;
+}
+.contato h3{
+    margin-bottom: 20px;
+}
+.contato p {
+    line-height: 45px;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer .social li{
+    display: inline-block;
+    padding: 20px;
+    font-size: 50px;
+}
+footer .menu li {
+    line-height: 35px;
+}
+.content{
+    font-size: 20px;
+    line-height: 25px;
+    padding: 50px;
+}
+.div-50 {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+.faleconosco h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+} 
+ .faleconosco input {
+    background: #d2d2d2;
+    width: 250px;
+    padding: 10px 2px;
+}
+input[type=radio]{
+    width: 25px;
+    float: left;
+    margin: 5px 0;
+}
+ .faleconosco ul li {
+    display: inline-block;
+ }
+
+
